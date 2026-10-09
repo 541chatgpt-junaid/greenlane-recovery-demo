@@ -41,3 +41,6 @@ optimise hero                1600 1067
 optimise flatbed-car          800  600
 optimise recovery-truck       800  600 center +0-85
 optimise motorcycle-recovery  800  600
+optimise van-recovery         800  600
+optimise motorway-night       800  600
+optimise jump-start           800  600 north

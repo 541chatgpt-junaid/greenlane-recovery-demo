@@ -15,6 +15,9 @@ Both licences allow free commercial use without attribution, but we keep a recor
 | `images/flatbed-car.webp` (734×551) | White pickup on a flatbed recovery truck | Supplied by owner | _TBC_ | _TBC_ |
 | `images/recovery-truck.webp` (736×552) | White flatbed recovery truck, parked | Supplied by owner | _TBC_ | _TBC_ |
 | `images/motorcycle-recovery.webp` (736×552) | Motorcycle strapped to a flatbed truck | Supplied by owner | _TBC_ | _TBC_ |
+| `images/van-recovery.webp` (736×552) | White van on a flatbed truck at sunset (appears AI-generated) | Supplied by owner | _TBC_ | _TBC_ |
+| `images/motorway-night.webp` (652×489) | UK motorway at dusk, overhead gantry signs | Supplied by owner | _TBC_ | _TBC_ |
+| `images/jump-start.webp` (736×552) | Jump leads on a car battery (cropped to leave out the jump-starter's brand label) | Supplied by owner | _TBC_ | _TBC_ |
 
 Originals are kept in `images/src/` (not deployed). Re-run `bash scripts/optimise-images.sh`
 after replacing any of them.
