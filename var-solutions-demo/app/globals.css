@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0d1117;
+  --color-ink-2: #161c25;
+  --color-panel: #1c2430;
+  --color-line: #2a3442;
+  --color-text: #e9edf2;
+  --color-muted: #9aa7b6;
+  --color-accent: #18c46b;
+  --color-accent-2: #12a058;
+  --color-warn: #ffcc33;
+  --color-light: #f5f7fa;
+  --color-dark: #121821;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-2: #1ebe5a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-barlow), "Arial Narrow", ui-sans-serif, sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-ping-slow: ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/* Keep the sticky mobile call bar from covering the footer. */
+@media (max-width: 859.98px) {
+  body {
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility heading {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: 0.005em;
+}
+
+@utility eyebrow {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-size: 0.9rem;
+  color: var(--color-accent);
+}
+
+@utility lift {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
